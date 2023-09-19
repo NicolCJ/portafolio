@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Fugaz+One&family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+@media screen and (min-width:950 ) and (max-width:1920){
+
+}
+
+@media screen and (min-width:950 ) and (max-width:1920){
+  
+}
+
+@media screen and (min-width:950 ) and (max-width:1920){
+  
+}
+
+
 
 *{
     margin: 0;
@@ -51,8 +64,8 @@ h1,h2,h3,h4{
   
   div[role="progressbar"] {
     --size: 7rem;
-    --fg: #369;
-    --bg: #def;
+    --fg: rgb(52, 191, 255);
+    --bg: rgb(251, 253, 255);
     --pgPercentage: var(--value);
     animation: growProgressBar 3s 1 forwards;
     width: var(--size);
@@ -72,6 +85,10 @@ h1,h2,h3,h4{
   div[role="progressbar"]::before {
     counter-reset: percentage var(--value);
     content: counter(percentage) '%';
+  }
+
+  .navbar-toggler{
+    background-color: #ffffff;
   }
   
   /* demo */
@@ -398,6 +415,10 @@ header #hero{
 .experiencia{
     background: #ffffff;
 }
+
+
+
+  
 
 #experiencia h2{
     text-align: center;
