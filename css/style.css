@@ -90,6 +90,57 @@ h1,h2,h3,h4{
   .navbar-toggler{
     background-color: #ffffff;
   }
+
+
+  div[role="progressbar-2"] {
+    --size: 7rem;
+    --fg: rgb(52, 191, 255);
+    --bg: rgb(251, 253, 255);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+  }
+  
+  div[role="progressbar-2"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+  }
+
+  div[role="progressbar-3"] {
+    --size: 7rem;
+    --fg: rgb(52, 191, 255);
+    --bg: rgb(251, 253, 255);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+  }
+  
+  div[role="progressbar-3"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+  }
   
   /* demo */
  
@@ -356,10 +407,14 @@ header #hero{
   padding: 0;
   margin-top: 24px;
   color: #fff;
+  margin-left: 30px;
+
   /* align-items: center; */
   /* justify-content: center; */
   /* display: flex; */
 }
+
+
 
 
 #educacion .accordion-header{
@@ -417,14 +472,22 @@ header #hero{
 }
 
 
-
-  
+#experiencia{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #experiencia h2{
     text-align: center;
     padding: 60px;
 }
 
+#experiencia h4{
+  color: #6B1A9E;
+}
+  
 
    
 
@@ -510,6 +573,9 @@ header #hero{
 
 .linkedin {
   background-color: #0077b5;
+}
+#expeciencia .til{
+  text-align: center;
 }
 
 
